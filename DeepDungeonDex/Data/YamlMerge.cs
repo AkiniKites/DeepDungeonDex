@@ -29,7 +29,7 @@ namespace DeepDungeonDex.Data
             var m = Regex.Match(data[0], @"\d+");
             if (!m.Success)
             {
-                PluginLog.Error("Invalid object pattern: " + data[0]);
+                Plugin.Log.Error("Invalid object pattern: " + data[0]);
                 return false;
             }
 
@@ -39,7 +39,7 @@ namespace DeepDungeonDex.Data
             if (!isOverride)
                 return false;
 
-            PluginLog.Information("Merging override for: " + id);
+            Plugin.Log.Information("Merging override for: " + id);
 
             var serializer = new SerializerBuilder()
                 .WithNamingConvention(CamelCaseNamingConvention.Instance)
@@ -56,7 +56,7 @@ namespace DeepDungeonDex.Data
         //sketchy yaml merge
         public static void MergeCustomChanges()
         {
-            PluginLog.Information("Merging mob overrides");
+            Plugin.Log.Information("Merging mob overrides");
 
             var dbData = File.ReadAllLines(Plugin.MobRepo.DbPath).ToList();
 

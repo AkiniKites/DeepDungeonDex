@@ -95,12 +95,12 @@ namespace DeepDungeonDex.Data
                     else
                         _overrideData = new Dictionary<uint, T>();
 
-                    PluginLog.Information($"Loaded data: mobs={_data.Count}, overrides={_overrideData.Count}");
+                    Plugin.Log.Information($"Loaded data: mobs={_data.Count}, overrides={_overrideData.Count}");
                     _dataLoaded = true;
                 }
                 catch(Exception ex)
                 {
-                    PluginLog.Error($"Error loading database ({Name}): {ex}");
+                    Plugin.Log.Error($"Error loading database ({Name}): {ex}");
                 }
             });
 
@@ -125,7 +125,7 @@ namespace DeepDungeonDex.Data
                 }
                 catch (Exception ex)
                 {
-                    PluginLog.Error($"Error saving database ({Name}): " + ex);
+                    Plugin.Log.Error($"Error saving database ({Name}): " + ex);
                 }
             });
         }

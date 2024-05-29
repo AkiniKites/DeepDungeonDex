@@ -30,6 +30,7 @@ namespace DeepDungeonDex
         [PluginService] internal static ICondition Condition { get; private set; } = null!;
         [PluginService] internal static IFramework Framework { get; private set; } = null!;
         [PluginService] internal static ITargetManager Targets { get; private set; } = null!;
+        [PluginService] internal static IPluginLog Log { get; private set; } = null!;
 
         public string Name => "DeepDungeonDex";
 
