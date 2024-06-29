@@ -21,7 +21,7 @@ namespace DeepDungeonDex.Data
         public string DbPath { get; init; }
         public string OverrideDbPath { get; init; }
 
-        public static DataRepo<T> Create(DalamudPluginInterface plugin, string name)
+        public static DataRepo<T> Create(IDalamudPluginInterface plugin, string name)
         {
             var dir = plugin.AssemblyLocation.Directory.FullName;
             var repo = new DataRepo<T>()
