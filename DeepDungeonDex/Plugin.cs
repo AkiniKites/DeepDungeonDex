@@ -24,7 +24,7 @@ namespace DeepDungeonDex
         public static DataRepo<MobData> MobRepo { get; private set; }
         public static DataRepo<JobData> JobRepo { get; private set; }
 
-        [PluginService] internal static DalamudPluginInterface PluginInterface { get; private set; } = null!;
+        [PluginService] internal static IDalamudPluginInterface PluginInterface { get; private set; } = null!;
         [PluginService] internal static IClientState ClientState { get; private set; } = null!;
         [PluginService] internal static ICommandManager CommandManager { get; private set; } = null!;
         [PluginService] internal static ICondition Condition { get; private set; } = null!;
@@ -71,11 +71,11 @@ namespace DeepDungeonDex
             try
             {
                 YamlMerge.MergeCustomChanges();
-                PluginLog.Information("Yaml merge ok.");
+                Plugin.Log.Information("Yaml merge ok.");
             }
             catch(Exception ex)
             {
-                PluginLog.Error(ex, "Failed to merge changes");
+                Plugin.Log.Error(ex, "Failed to merge changes");
             }
         }
 

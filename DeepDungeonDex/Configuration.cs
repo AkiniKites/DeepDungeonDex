@@ -13,9 +13,9 @@ namespace DeepDungeonDex
         public bool HideBasedOnJob { get; set; } = false;
 
         // Add any other properties or methods here.
-        [JsonIgnore] private DalamudPluginInterface pluginInterface;
+        [JsonIgnore] private IDalamudPluginInterface pluginInterface;
 
-        public void Initialize(DalamudPluginInterface pluginInterface)
+        public void Initialize(IDalamudPluginInterface pluginInterface)
         {
             this.pluginInterface = pluginInterface;
         }

@@ -9,9 +9,9 @@ namespace DeepDungeonDex
 		public static uint NameID { get; set; }
 		public static SeString Name { get; set; }
 
-		public static void UpdateTargetData(GameObject target, out bool isValid)
+		public static void UpdateTargetData(IGameObject target, out bool isValid)
 		{
-			if (target is BattleNpc bnpc)
+			if (target is IBattleNpc bnpc)
 			{
 				Name = bnpc.Name;
 				NameID = bnpc.NameId;
