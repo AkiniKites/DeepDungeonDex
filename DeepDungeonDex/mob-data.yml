@@ -4292,7 +4292,7 @@
   name: deep palace nanka
   mobNotes: ''
   threat: Easy
-  aggro: Sight
+  aggro: Sound
 
 5377:
   vuln:
@@ -5649,7 +5649,7 @@
   name: palace sprite
   mobNotes: ''
   threat: Easy
-  aggro: Sight
+  aggro: Sound
 
 5480:
   vuln:
@@ -5662,7 +5662,7 @@
   name: deep palace sprite
   mobNotes: ''
   threat: Easy
-  aggro: Sight
+  aggro: Sound
 
 2566:
   vuln:
