@@ -64,7 +64,7 @@ namespace DeepDungeonDex.UI
             var mobData = Plugin.MobRepo.Get(TargetData.NameID, out var isOverride);
             if (mobData == null) return;
 
-            var cjid = Plugin.ClientState.LocalPlayer?.ClassJob.GameData?.RowId ?? 0;
+            var cjid = Plugin.ClientState.LocalPlayer?.ClassJob.RowId ?? 0;
             var jobData = Plugin.JobRepo.Get(cjid);
 
             var flags = ImGuiWindowFlags.NoResize | ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoTitleBar;
