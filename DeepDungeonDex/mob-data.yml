@@ -4001,11 +4001,11 @@
 
 5353:
   vuln:
-    canStun: 
+    canStun: false
     canHeavy: false
-    canSlow: 
-    canSleep: 
-    canBind: 
+    canSlow: true
+    canSleep: false
+    canBind: false
     isUndead: true
   name: palace iron corse
   mobNotes: ''
@@ -4109,10 +4109,10 @@
 5364:
   vuln:
     canStun: true
-    canHeavy: 
+    canHeavy: true
     canSlow: true
     canSleep: true
-    canBind: 
+    canBind: true
     isUndead: false
   name: deep palace hippogryph
   mobNotes: >-
@@ -4629,7 +4629,7 @@
   vuln:
     canStun: true
     canHeavy: true
-    canSlow: 
+    canSlow: true
     canSleep: false
     canBind: true
     isUndead: true
@@ -4733,9 +4733,9 @@
   vuln:
     canStun: true
     canHeavy: true
-    canSlow: 
+    canSlow: true
     canSleep: true
-    canBind: 
+    canBind: false
     isUndead: true
   name: deep palace gourmand
   mobNotes: >-
@@ -4822,11 +4822,11 @@
 
 5415:
   vuln:
-    canStun: true
+    canStun: false
     canHeavy: true
-    canSlow: 
-    canSleep: 
-    canBind: 
+    canSlow: true
+    canSleep: false
+    canBind: true
     isUndead: false
   name: deep palace knight
   mobNotes: >-
@@ -4897,10 +4897,10 @@
 5420:
   vuln:
     canStun: false
-    canHeavy: 
-    canSlow: 
-    canSleep: 
-    canBind: 
+    canHeavy: false
+    canSlow: false
+    canSleep: false
+    canBind: false
     isUndead: true
   name: onyx dragon
   mobNotes: Casts Gaze "Evil Eye"
@@ -4925,7 +4925,7 @@
     canStun: true
     canHeavy: false
     canSlow: true
-    canSleep: 
+    canSleep: false
     canBind: false
     isUndead: true
   name: deep palace wraith
@@ -4936,10 +4936,10 @@
 5423:
   vuln:
     canStun: false
-    canHeavy: 
-    canSlow: 
-    canSleep: 
-    canBind: 
+    canHeavy: true
+    canSlow: true
+    canSleep: false
+    canBind: true
     isUndead: true
   name: deep palace keeper
   mobNotes: Very high damage for the floors it appears on
@@ -5587,7 +5587,7 @@
   vuln:
     canStun: false
     canHeavy: false
-    canSlow: 
+    canSlow: true
     canSleep: false
     canBind: false
     isUndead: false
@@ -5598,9 +5598,9 @@
 
 5473:
   vuln:
-    canStun: false
+    canStun: true
     canHeavy: false
-    canSlow: 
+    canSlow: true
     canSleep: false
     canBind: false
     isUndead: false
@@ -5613,20 +5613,20 @@
   vuln:
     canStun: false
     canHeavy: true
-    canSlow: 
+    canSlow: true
     canSleep: false
     canBind: false
     isUndead: true
   name: deep palace bicephalus
-  mobNotes: ''
-  threat: Easy
+  mobNotes: Steel recommended. Tank buster hurts
+  threat: Caution
   aggro: Proximity
 
 5475:
   vuln:
     canStun: true
     canHeavy: false
-    canSlow: 
+    canSlow: true
     canSleep: false
     canBind: false
     isUndead: true
@@ -5649,7 +5649,7 @@
   name: palace sprite
   mobNotes: ''
   threat: Easy
-  aggro: Sound
+  aggro: Sight
 
 5480:
   vuln:
@@ -5662,7 +5662,7 @@
   name: deep palace sprite
   mobNotes: ''
   threat: Easy
-  aggro: Sound
+  aggro: Sight
 
 2566:
   vuln:
