@@ -2115,7 +2115,7 @@
   name: palace hippocerf
   mobNotes: ''
   threat: Easy
-  aggro: Proximity
+  aggro: Sight
 
 4980:
   vuln:
